@@ -56,3 +56,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do    #:productionで指定すると本番環境のみで使用されるように指定できる
   gem 'rails_12factor'  #開発環境ではなく本番環境で使用するGem
 end
+
+gem 'devise'
+#gem 'omniauth'         #OAuth認証に必要なGem
+#gem 'omniauth-twitter' #OAuth認証に必要なGem
+#gem 'dotenv-rails'     #envファイルで環境変数を管理する用のgemです。合わせてインストールしておきましょう
