@@ -58,6 +58,10 @@ group :production do    #:productionで指定すると本番環境のみで使�
 end
 
 gem 'devise'
-#gem 'omniauth'         #OAuth認証に必要なGem
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection"
 #gem 'omniauth-twitter' #OAuth認証に必要なGem
 #gem 'dotenv-rails'     #envファイルで環境変数を管理する用のgemです。合わせてインストールしておきましょう
+
+gem "pry-rails"
