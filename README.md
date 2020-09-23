@@ -101,6 +101,18 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :pet_profile
 
+## SnsCredentials テーブル
+
+| Column   | Type       | Options          |
+| -------- | ---------- | ---------------- |
+| provider | string     | null: false      |
+| uid      | string     | null: false      |
+| user_id  | references | foreign_key:true |
+
+### Association
+
+- belongs_to :user, optional: true
+
 
 <!-- ## pets_profile_users テーブル
 | Column       | Type       | Options                        |
